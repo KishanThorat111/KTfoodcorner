@@ -1,0 +1,86 @@
+/* General Footer Styles */
+footer {
+    background: #e72929;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for Footer */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+}
+
+/* Footer Logo */
+.footer-logo {
+    font-weight: 900;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.footer-logo a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer Links */
+.footer-links, .footer-social {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-links a,
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    text-decoration: underline;
+    color: #ffcccc;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links,
+    .footer-social {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-logo {
+        font-size: 1.5rem;
+    }
+
+    .footer-links a,
+    .footer-social a {
+        font-size: 0.9rem;
+    }
+}

@@ -30,6 +30,13 @@ cd foodcorner
 npm install
 ng serve  # Runs the Angular application
 ```
+## 🖥️ Deployment
+
+Frontend: Deployed on netlify Render - https://ktfoodcorner.netlify.app/
+Email:kishan@gmail.com
+password:123456
+Backend: Hosted on Render - https://ktfoodcornerbackend.onrender.com/
+
 
 ## 📞 Contact
 For any queries, reach out to **Kishan Thorat** via [LinkedIn](https://linkedin.com/in/kishanthorat) or email at `your-kishanthorat111@example.com`.

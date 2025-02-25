@@ -3,10 +3,12 @@
         "module": "CommonJS",
         "moduleResolution": "node",
         "strict": true,
-        "outDir": "./built",
+        "outDir": "./dist",
+        "rootDir": "./src",
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "target": "ES6"
     },
     "include": ["src/**/*"],
 }

@@ -14,7 +14,9 @@ import { RouterModule } from '@angular/router';
 export class TagComponent implements OnInit {
   tags?:Tag[];
   constructor(api:FoodService) {
-    this.tags = api.getAllTags();
+    api.getAllTags().subscribe(serverTag=>{
+      this.tags = serverTag
+    });
    }
 
   ngOnInit(): void {

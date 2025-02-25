@@ -7,6 +7,7 @@ import { StarRatingComponent } from '../../star-rating/star-rating.component';
 import { SearchComponent } from "../search/search.component";
 import { TagComponent } from "../tag/tag.component";
 import { NotFoundComponent } from "../not-found/not-found.component";
+import { Observable } from 'rxjs';
 
 
 
@@ -19,14 +20,19 @@ import { NotFoundComponent } from "../not-found/not-found.component";
 })
 export class HomeComponent implements OnInit {
   foods:Food[] = [];
+
   constructor(private api:FoodService, activatedRoute:ActivatedRoute) {
+    let foodsObservable:Observable<Food[]>
     activatedRoute.params.subscribe((params)=>{
       if (params.searchTerm)
-      this.foods = this.api.getAllFoodBySearchTerm(params.searchTerm)
+      foodsObservable = this.api.getAllFoodBySearchTerm(params.searchTerm)
       else if(params.tag)
-      this.foods=this.api.getAllFoodByTag(params.tag)
+      foodsObservable=this.api.getAllFoodByTag(params.tag)
       else
-      this.foods = api.getAll()
+      foodsObservable = api.getAll()
+      foodsObservable.subscribe((serverFoods)=>{
+        this.foods = serverFoods
+      })
    })
   
   }

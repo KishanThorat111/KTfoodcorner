@@ -2,7 +2,7 @@
 footer {
     background: #e72929;
     color: white;
-    padding: 2rem 0;
+    padding: 1rem 0;
     text-align: center;
     margin-top: 2rem;
     font-family: Arial, sans-serif;
@@ -23,7 +23,7 @@ footer {
 .footer-logo {
     font-weight: 900;
     font-size: 1.8rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 .footer-logo a {

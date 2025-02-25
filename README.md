@@ -39,5 +39,5 @@ Backend: Hosted on Render - https://ktfoodcornerbackend.onrender.com/
 ```
 
 ## 📞 Contact
-For any queries, reach out to **Kishan Thorat** via [LinkedIn](https://linkedin.com/in/kishanthorat) or email at `your-kishanthorat111@example.com`.
+For any queries, reach out to **Kishan Thorat** via [LinkedIn](https://linkedin.com/in/kishanthorat) or email at `kishanthorat111@example.com`.
 

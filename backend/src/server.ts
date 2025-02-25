@@ -6,9 +6,10 @@ import jwt from "jsonwebtoken";
 const app = express();
 app.use(express.json())
 app.use(cors({
-    credentials:true,
-    origin:["http://localhost:4200"]
-})) 
+    credentials: true,
+    origin: ["http://localhost:4200", "https://ktfoodcorner.netlify.app"] // ✅ Allow Netlify Frontend
+}));
+
 
 app.get("/api/foods",(req,res)=>{
     res.send(sample_foods)

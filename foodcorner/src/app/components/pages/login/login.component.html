@@ -29,27 +29,35 @@
 </div> -->
 
 <div class="login-container">
-    <div class="login-box">
-        <app-title title="Login"></app-title>
-        <form [formGroup]="loginForm" (ngSubmit)="submit()">
-            <div class="input-container">
-                <label for="email">Email</label>
-                <input type="email" placeholder="abc@gmail.com" formControlName="email">
-                <div class="error-list" *ngIf="fc.email.errors && isSubmited">
-                    <div *ngIf="fc.email.errors.required">Email is required!</div>
-                    <div *ngIf="fc.email.errors.email">Invalid email format.</div>
-                </div>
-            </div>
-            
-            <div class="input-container">
-                <label for="password">Password</label>
-                <input type="password" placeholder="********" formControlName="password">
-                <div class="error-list" *ngIf="fc.password.errors && isSubmited">
-                    <div *ngIf="fc.password.errors.required">Password is required!</div>
-                </div>
-            </div>
+  <div class="login-box">
+    <app-title title="Login"></app-title>
+    <form [formGroup]="loginForm" (ngSubmit)="submit()">
+      <div class="input-container">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          placeholder="kishan@gmail.com"
+          formControlName="email"
+        />
+        <div class="error-list" *ngIf="fc.email.errors && isSubmited">
+          <div *ngIf="fc.email.errors.required">Email is required!</div>
+          <div *ngIf="fc.email.errors.email">Invalid email format.</div>
+        </div>
+      </div>
 
-            <button type="submit" class="login-button">Login</button>
-        </form>
-    </div>
+      <div class="input-container">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          placeholder="123456"
+          formControlName="password"
+        />
+        <div class="error-list" *ngIf="fc.password.errors && isSubmited">
+          <div *ngIf="fc.password.errors.required">Password is required!</div>
+        </div>
+      </div>
+
+      <button type="submit" class="login-button">Login</button>
+    </form>
+  </div>
 </div>
